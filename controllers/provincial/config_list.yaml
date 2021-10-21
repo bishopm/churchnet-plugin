@@ -1,0 +1,12 @@
+list: $/bishopm/churchnet/models/provincial/columns.yaml
+modelClass: Bishopm\Churchnet\Models\Provincial
+title: Provincial
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'bishopm/churchnet/provincial/update/:id'

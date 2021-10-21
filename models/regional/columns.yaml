@@ -1,0 +1,16 @@
+columns:
+    reference:
+        label: Number
+        type: text
+        searchable: true
+        sortable: true
+    regional:
+        label: Circuit
+        type: text
+        searchable: true
+        sortable: true
+    provincial:
+        label: District
+        type: text
+        select: provincial
+        relation: provincial

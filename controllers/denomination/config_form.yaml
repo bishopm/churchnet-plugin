@@ -1,0 +1,10 @@
+name: Denomination
+form: $/bishopm/churchnet/models/denomination/fields.yaml
+modelClass: Bishopm\Churchnet\Models\Denomination
+defaultRedirect: bishopm/churchnet/denomination
+create:
+    redirect: 'bishopm/churchnet/denomination/update/:id'
+    redirectClose: bishopm/churchnet/denomination
+update:
+    redirect: bishopm/churchnet/denomination
+    redirectClose: bishopm/churchnet/denomination

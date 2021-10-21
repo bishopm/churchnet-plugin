@@ -1,0 +1,9 @@
+columns:
+    provincial:
+        label: 'Provincial structure'
+        type: text
+    denomination:
+        label: Denomination
+        type: text
+        select: denomination
+        relation: denomination

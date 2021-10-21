@@ -1,0 +1,8 @@
+layleaders:
+    label: Leaders / preachers
+    manage:
+        form: $/bishopm/churchnet/models/layleader/fields.yaml
+        list: $/bishopm/churchnet/models/layleader/columns.yaml
+    view:
+        list: $/bishopm/churchnet/models/layleader/columns.yaml
+        toolbarButtons: add|remove

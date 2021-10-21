@@ -1,0 +1,42 @@
+fields:
+    surname:
+        label: Surname
+        span: left
+        type: text
+    firstname:
+        label: 'First name'
+        span: right
+        type: text
+    status:
+        label: Status
+        options:
+            Bishop: Bishop
+            Deacon: Deacon
+            Minister: Minister
+            'Superintendent Minister': 'Superintendent Minister'
+            'Supernumerary Minister': 'Supernumerary Minister'
+        showSearch: true
+        span: auto
+        type: dropdown
+    phone:
+        label: Phone
+        span: right
+        type: text
+    regional:
+        label: Circuit
+        nameFrom: regional
+        descriptionFrom: regional
+        select: 'concat(reference," ",regional)'
+        span: left
+        type: relation
+    role:
+        label: Role
+        options:
+            Superintendent: Superintendent
+        showSearch: true
+        span: auto
+        type: dropdown
+    active:
+        label: Active
+        span: auto
+        type: switch

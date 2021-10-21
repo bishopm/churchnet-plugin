@@ -1,0 +1,11 @@
+name: Layleader
+modelClass: Bishopm\Churchnet\Models\Layleader
+form: $/bishopm/churchnet/models/layleader/fields.yaml
+defaultRedirect: bishopm/churchnet/layleader
+create:
+    redirect: 'bishopm/churchnet/layleader/update/:id'
+    redirectClose: bishopm/churchnet/layleader
+update:
+    redirect: bishopm/churchnet/layleader
+    redirectClose: bishopm/churchnet/layleader
+preview: {  }

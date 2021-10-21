@@ -1,0 +1,54 @@
+tabs:
+    fields:
+        regional:
+            label: Circuit
+            span: auto
+            type: text
+            tab: 'Circuit details'
+        slug:
+            label: Slug
+            span: auto
+            dependsOn:
+                - regional
+            preset:
+                field: regional
+                type: slug
+            type: text
+            tab: 'Circuit details'
+        reference:
+            label: 'Circuit number'
+            span: auto
+            type: text
+            tab: 'Circuit details'
+        provincial:
+            label: District
+            nameFrom: provincial
+            descriptionFrom: provincial
+            span: auto
+            type: relation
+            tab: 'Circuit details'
+        contact:
+            label: 'Contact details'
+            span: auto
+            type: text
+            tab: 'Circuit details'
+        plan_month:
+            label: 'Preaching plan first month'
+            options:
+                1: January
+                2: February
+                3: March
+            showSearch: 0
+            span: auto
+            type: dropdown
+            tab: 'Circuit details'
+        latitude:
+            label: Latitude
+            span: auto
+            type: number
+            tab: 'Circuit details'
+        longitude:
+            label: Longitude
+            span: auto
+            type: number
+            tab: 'Circuit details'

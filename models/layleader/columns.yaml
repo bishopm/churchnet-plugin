@@ -1,0 +1,17 @@
+columns:
+    surname:
+        label: Surname
+        type: text
+    firstname:
+        label: 'First name'
+        type: text
+    tags:
+        label: Role/status
+        type: text
+        select: tag
+        relation: tags
+    local:
+        label: Society
+        type: text
+        select: local
+        relation: local

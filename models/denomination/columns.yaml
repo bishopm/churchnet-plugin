@@ -1,0 +1,11 @@
+columns:
+    denomination:
+        label: Denomination
+        type: text
+        searchable: true
+        sortable: true
+    abbreviation:
+        label: Abbreviation
+        type: text
+        searchable: true
+        sortable: true

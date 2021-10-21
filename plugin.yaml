@@ -1,0 +1,32 @@
+plugin:
+    name: 'bishopm.churchnet::lang.plugin.name'
+    description: 'Churchnet website and API'
+    author: Bishopm
+    icon: oc-icon-database
+    homepage: 'https://church.net.za'
+navigation:
+    churchnet-menu-item:
+        label: Churchnet
+        url: /bishopm/churchnet/denomination
+        icon: icon-database
+        sideMenu:
+            denominations-menu-item:
+                label: Denominations
+                url: /bishopm/churchnet/denomination
+                icon: icon-crosshairs
+            provincials-menu-item:
+                label: Districts
+                url: /bishopm/churchnet/provincial
+                icon: icon-sitemap
+            regionals-menu-item:
+                label: Circuits
+                url: bishopm/churchnet/regional
+                icon: icon-pie-chart
+            locals-menu-item:
+                label: Societies
+                url: bishopm/churchnet/local
+                icon: icon-map-marker
+            ministers-menu-item:
+                label: Clergy
+                url: bishopm/churchnet/minister
+                icon: icon-child

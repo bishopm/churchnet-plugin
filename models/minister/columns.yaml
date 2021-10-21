@@ -1,0 +1,23 @@
+columns:
+    surname:
+        label: Surname
+        type: text
+        searchable: true
+        sortable: true
+    firstname:
+        label: 'First name'
+        type: text
+        searchable: true
+        sortable: true
+    status:
+        label: Status
+        type: text
+        searchable: true
+        sortable: true
+    regional:
+        label: Circuit
+        type: text
+        searchable: true
+        sortable: true
+        select: 'concat(reference," ",regional)'
+        relation: regional

@@ -1,0 +1,7 @@
+scopes:
+
+    provincials:
+        label: District
+        modelClass: Bishopm\Churchnet\Models\Provincial
+        conditions: provincial_id in (:filtered)
+        nameFrom: provincial

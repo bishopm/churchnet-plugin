@@ -1,0 +1,22 @@
+fields:
+    surname:
+        label: Surname
+        span: left
+        type: text
+    firstname:
+        label: Firstname
+        span: right
+        type: text
+    tags:
+        label: 'Status and/or role'
+        mode: relation
+        separator: comma
+        customTags: true
+        nameFrom: tag
+        useKey: false
+        span: auto
+        type: taglist
+    phone:
+        label: Phone
+        span: right
+        type: text

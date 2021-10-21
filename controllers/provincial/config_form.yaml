@@ -1,0 +1,10 @@
+name: Provincial
+form: $/bishopm/churchnet/models/provincial/fields.yaml
+modelClass: Bishopm\Churchnet\Models\Provincial
+defaultRedirect: bishopm/churchnet/provincial
+create:
+    redirect: 'bishopm/churchnet/provincial/update/:id'
+    redirectClose: bishopm/churchnet/provincial
+update:
+    redirect: bishopm/churchnet/provincial
+    redirectClose: bishopm/churchnet/provincial

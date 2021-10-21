@@ -1,0 +1,13 @@
+columns:
+    local:
+        label: Society
+        type: text
+        searchable: true
+        sortable: true
+    regional:
+        label: Circuit
+        type: text
+        searchable: true
+        sortable: true
+        select: 'concat (reference," ",regional)'
+        relation: regional

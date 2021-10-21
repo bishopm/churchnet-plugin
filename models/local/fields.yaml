@@ -1,0 +1,59 @@
+tabs:
+    fields:
+        local:
+            label: Society
+            span: auto
+            type: text
+            tab: 'Society details'
+        slug:
+            label: Slug
+            span: right
+            dependsOn: {  }
+            preset:
+                field: local
+                type: slug
+            type: text
+            tab: 'Society details'
+        regional:
+            label: Circuit
+            nameFrom: regional
+            descriptionFrom: description
+            select: 'concat(reference, " ", regional)'
+            span: auto
+            type: relation
+            tab: 'Society details'
+        address:
+            label: Address
+            span: right
+            type: text
+            tab: 'Society details'
+        email:
+            label: Email
+            span: auto
+            type: text
+            tab: 'Society details'
+        website:
+            label: Website
+            span: right
+            type: text
+            tab: 'Society details'
+        latitude:
+            label: Latitude
+            span: left
+            type: number
+            tab: 'Society details'
+        longitude:
+            label: Longitude
+            span: right
+            type: number
+            tab: 'Society details'
+        coords:
+            label: Co-ordinates
+            span: full
+            type: Bishopm\Churchnet\FormWidgets\Map
+            tab: 'Society details'
+        partial1:
+            span: full
+            path: subform_layleaders
+            type: partial
+            tab: 'Leaders / preachers'

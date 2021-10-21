@@ -1,0 +1,10 @@
+name: Regional
+form: $/bishopm/churchnet/models/regional/fields.yaml
+modelClass: Bishopm\Churchnet\Models\Regional
+defaultRedirect: bishopm/churchnet/regional
+create:
+    redirect: 'bishopm/churchnet/regional/update/:id'
+    redirectClose: bishopm/churchnet/regional
+update:
+    redirect: bishopm/churchnet/regional
+    redirectClose: bishopm/churchnet/regional

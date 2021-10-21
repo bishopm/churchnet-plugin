@@ -1,0 +1,10 @@
+name: Minister
+form: $/bishopm/churchnet/models/minister/fields.yaml
+modelClass: Bishopm\Churchnet\Models\Minister
+defaultRedirect: bishopm/churchnet/minister
+create:
+    redirect: 'bishopm/churchnet/minister/update/:id'
+    redirectClose: bishopm/churchnet/minister
+update:
+    redirect: bishopm/churchnet/minister
+    redirectClose: bishopm/churchnet/minister

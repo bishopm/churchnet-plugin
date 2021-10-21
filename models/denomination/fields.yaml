@@ -1,0 +1,34 @@
+fields:
+    denomination:
+        label: Denomination
+        span: full
+        type: text
+    slug:
+        label: Slug
+        span: left
+        dependsOn:
+            - denomination
+        preset:
+            field: denomination
+            type: slug
+        type: text
+    abbreviation:
+        label: Abbreviation
+        span: right
+        type: text
+    national:
+        label: National
+        span: left
+        type: text
+    provincial:
+        label: Provincial
+        span: right
+        type: text
+    regional:
+        label: Regional
+        span: left
+        type: text
+    local:
+        label: Local
+        span: right
+        type: text

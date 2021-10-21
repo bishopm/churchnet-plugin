@@ -1,0 +1,17 @@
+{
+    "name": "bishopm/churchnet-plugin",
+    "type": "winter-plugin",
+    "description": "ChurchNet plugin for Winter CMS",
+    "homepage": "https://github.com/bishopm/churchnet-plugin",
+    "keywords": ["churchnet"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Bishop",
+            "email": "admin@church.net.za"
+        }
+    ],
+    "require": {
+        "tymon/jwt-auth": "1.*"
+    }
+}

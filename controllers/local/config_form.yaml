@@ -1,0 +1,10 @@
+name: Local
+form: $/bishopm/churchnet/models/local/fields.yaml
+modelClass: Bishopm\Churchnet\Models\Local
+defaultRedirect: bishopm/churchnet/local
+create:
+    redirect: 'bishopm/churchnet/local/update/:id'
+    redirectClose: bishopm/churchnet/local
+update:
+    redirect: bishopm/churchnet/local
+    redirectClose: bishopm/churchnet/local

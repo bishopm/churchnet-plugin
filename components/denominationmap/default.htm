@@ -1,0 +1,17 @@
+<div id="mapid" style="width: 100%; height: 400px;"></div> 
+<script src="/plugins/bishopm/churchnet/assets/js/leaflet.js"></script>
+<script>
+    var tilelayer = new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?access_token={accessToken}', { maxZoom: 18, accessToken: '{{ __SELF__.property('token') }}' });
+    var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 18 });
+    var allMaps = { "Street map": tilelayer, "Satellite image": satellite };
+    var featureGroup = L.featureGroup([
+        {% for provincial in records %}
+            {% if provincial.latitude %}
+                L.marker([{{provincial.latitude}},{{provincial.longitude}}]).bindPopup('<b><a href="{{'circuits'|page({district:provincial.slug})}}">{{provincial.provincial}} District</a></b></a>'), 
+            {% endif %}
+        {% endfor %}
+    ]);
+    var mymap = new L.Map('mapid', { 'center': [0, 0], 'zoom': 0, 'layers': [tilelayer, featureGroup] });  
+    L.control.layers(allMaps).addTo(mymap);
+    mymap.fitBounds(featureGroup.getBounds(), {padding: [25,25]});
+</script> 

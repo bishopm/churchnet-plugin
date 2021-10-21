@@ -1,0 +1,28 @@
+fields:
+    provincial:
+        label: 'Provincial structure'
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: right
+        dependsOn:
+            - provincial
+        preset:
+            field: provincial
+            type: slug
+        type: text
+    denomination:
+        label: Denomination
+        nameFrom: denomination
+        descriptionFrom: denomination
+        span: full
+        type: relation
+    latitude:
+        label: Latitude
+        span: left
+        type: number
+    longitude:
+        label: Longitude
+        span: right
+        type: number
