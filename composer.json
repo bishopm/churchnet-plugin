@@ -12,6 +12,8 @@
         }
     ],
     "require": {
-        "tymon/jwt-auth": "1.*"
+        "rluders/jwtauth-plugin": "1.*",
+        "rluders/oc-cors-plugin": "dev-master",
+        "winter/wn-pages-plugin": "2.*"
     }
 }
