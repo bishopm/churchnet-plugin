@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "rluders/jwtauth-plugin": "1.*",
-        "rluders/oc-cors-plugin": "dev-master",
+        "rluders/jwtauth": "1.*",
+        "rluders/cors": "1.*",
         "winter/wn-pages-plugin": "2.*"
     }
 }
